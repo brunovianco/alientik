@@ -1,4 +1,4 @@
-## AlienTik
+# AlienTik
 Module to export AlienVault™ NIDS events to MikroTik
 
 The code is released "as is" and is under testing, use at your own risk, works 
@@ -9,7 +9,7 @@ more detail, look at the SQL code in includes/event_dao.class.php.
 
 Thanks to http://wiki.mikrotik.com/wiki/API_PHP_class
 
-# Adding support for TZSP to Suricata inside of AlienVault™
+## Adding support for TZSP to Suricata inside of AlienVault™
 
 For sniff TZSP in Mangle you will also need:
 - tzsp2pcap (https://github.com/thefloweringash/tzsp2pcap) **apt install build-essential libpcap-dev** then **make**
@@ -39,5 +39,4 @@ edit /etc/iptables/rules012-custom.iptables
 # add this line at the top
 -A INPUT -p udp --dport 37008 -j ACCEPT
 ```
-
 Thanks to https://github.com/zzbe/mikrocata
